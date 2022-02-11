@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+@media only screen and (min-width: 768px) {
+  .contenedorHeader {
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    height: 10rem; }
+  .logoHeader {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 0.4rem; }
+    .logoHeader img {
+      max-width: 15rem;
+      height: auto; }
+  .linksHeader {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem; }
+    .linksHeader ul {
+      display: flex;
+      justify-content: space-around;
+      width: 100%; }
+      .linksHeader ul li {
+        list-style: none; }
+        .linksHeader ul li a {
+          font-family: 'Montserrat', sans-serif;
+          text-decoration: none;
+          color: #000000;
+          font-weight: 600; }
+        .linksHeader ul li :hover {
+          color: #C63434; } }
+
+.redesHeader {
+  display: flex;
+  width: 20%;
+  justify-content: center; }
+  .redesHeader .redesHeaderLogo {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    .redesHeader .redesHeaderLogo img {
+      max-width: 2rem;
+      max-height: 2rem; }
+
+@media only screen and (min-width: 768px) and (max-width: 2560px) {
+  .redesHeader .redesHeaderLogo {
+    width: 80%; }
+  .logoHeader {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 0.4rem; }
+    .logoHeader img {
+      max-width: 12rem;
+      height: auto; } }
+
+@media only screen and (max-width: 768px) {
+  .linksHeader {
+    display: none; }
+  .redesHeader {
+    display: none; }
+  .logoHeader {
+    width: 25%;
+    height: 10rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; }
+    .logoHeader img {
+      width: 18rem;
+      height: 6rem; }
+  header {
+    background-color: #FFC83D; } }
